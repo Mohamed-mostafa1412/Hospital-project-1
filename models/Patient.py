@@ -1,8 +1,8 @@
-from models.person import Person
-from models.Medical_records import Medical_records
+from .person import Person
+from .Medical_records import Medical_records
 
 class Patient(Person):
-    def __init__(self, name, id_number, age=None, gender="N/A", blood_type=None, contact_info=None):
+    def __init__(self, name, id_number, age=None, gender="Not Specified", blood_type=None, contact_info=None):
         super().__init__(name, id_number, age, contact_info)
         self.gender = gender
         self.blood_type = blood_type
