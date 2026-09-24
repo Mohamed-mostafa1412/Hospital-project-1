@@ -24,6 +24,8 @@ class HospitalGUI(ctk.CTk):
         for widget in self.main_container.winfo_children():
             widget.destroy()
 
+    
+    
     def show_role_selection_screen(self):
         self.clear_container()
 
